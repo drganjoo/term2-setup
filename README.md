@@ -111,6 +111,7 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=c:\vcpkg\scripts\buildsystems\vcpkg.cmake -G "Vi
 ![build_folder]
 
 Open Visual Studio 2015 and load ExtendedKF.sln from the build directory. Once loaded, make sure that the include directory is correctly set by right clicking on ExtendedKF Project in the solution explorer and choose properties:
+
 ![properties]
 ![include_dir]
 
