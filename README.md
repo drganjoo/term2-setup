@@ -12,6 +12,8 @@
 [connected]: ./images/connected.png
 [rmse]: ./images/rmse.png
 [debug]: ./images/debug.png
+[properties]: ./images/properties.png
+
 
 ## Install cmake
 
@@ -33,7 +35,7 @@ Run bootstrap
 C:\vcpkg> .\bootstrap-vcpkg.bat
 ```
 
-Open command prompt as administrator and run:
+Open command prompt as **administrator** and run:
 
 ```
 C:\vcpkg> .\vcpkg integrate install
@@ -45,7 +47,7 @@ Install pre-requisites:
 C:\vcpkg> .\vcpkg install openssl zlib libuv
 ```
 
-Download uws-term2.zip [uws-term2-port.zip](https://raw.githubusercontent.com/drganjoo/term2-setup/master/uws-term2-ports.zip) and copy the 'uws-term2' folder from the zip file to c:\vcpkg\ports
+Download [uws-term2-ports.zip](https://raw.githubusercontent.com/drganjoo/term2-setup/master/uws-term2-ports.zip) and copy the 'uws-term2' folder from the zip file to c:\vcpkg\ports
 
 ![copy_to_ports]
 
@@ -102,15 +104,14 @@ Or you can download the [CMakeLists.txt](CMakeLists.txt) and use that.
 cd CarND-Extended-Kalman-Filter-Project
 mkdir build
 cd build
-cmake .. -DCMAKE_TOOLCHAIN_FILE=c:\vcpkg\scripts\buildsystems\vcpkg.cmake
--G "Visual Studio 14"
+cmake .. -DCMAKE_TOOLCHAIN_FILE=c:\vcpkg\scripts\buildsystems\vcpkg.cmake -G "Visual Studio 14"
 ```
 
 ![cmake_output]
 ![build_folder]
 
-Open Visual Studio 2015 and load ExtendedKF.sln from the build directory. Once loaded, make sure that the include directory is correctly set:
-
+Open Visual Studio 2015 and load ExtendedKF.sln from the build directory. Once loaded, make sure that the include directory is correctly set by right clicking on ExtendedKF Project in the solution explorer and choose properties:
+![properties]
 ![include_dir]
 
 Also, make sure Linker is set correctly:
