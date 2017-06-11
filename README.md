@@ -10,19 +10,19 @@ Clone vcpkg from https://github.com/Microsoft/vcpkg.git into c:\vcpkg (or any fo
 Run bootstrap
 
 ```
-C:\src\vcpkg> .\bootstrap-vcpkg.bat
+C:\vcpkg> .\bootstrap-vcpkg.bat
 ```
 
 Open command prompt as administrator and run:
 
 ```
-C:\src\vcpkg> .\vcpkg integrate install
+C:\vcpkg> .\vcpkg integrate install
 ```
 
 Install pre-requisites:
 
 ```
-C:\src\vcpkg> .\vcpkg install openssl zlib libuv
+C:\vcpkg> .\vcpkg install openssl zlib libuv
 ```
 
 Download uws-term2.zip [uws-term2-port.zip](https://raw.githubusercontent.com/drganjoo/term2-setup/master/uws-term2-ports.zip) and copy the 'port' folder to c:\vcpkg
