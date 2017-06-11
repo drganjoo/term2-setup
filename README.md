@@ -13,6 +13,7 @@
 [rmse]: ./images/rmse.png
 [debug]: ./images/debug.png
 [properties]: ./images/properties.png
+[errors]: ./images/errors.png
 
 
 ## Install cmake
@@ -120,6 +121,8 @@ Also, make sure Linker is set correctly:
 ![library_dir]
 
 Build the project, you will get about 37 warnings related to code written inside uWS and two errors for our own project, which makes sense since we need to finish those functions before the code can compile.
+
+![errors]
 
 For testing purposes, open tools.cpp and complete those two functions. e.g. just return 1,2,3,4 as RMSE:
 
