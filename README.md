@@ -15,7 +15,6 @@
 [properties]: ./images/properties.png
 [errors]: ./images/errors.png
 
-
 ## Install cmake
 
 Download and install cmake:
@@ -48,7 +47,7 @@ Install pre-requisites:
 C:\vcpkg> .\vcpkg install openssl zlib libuv
 ```
 
-Download [uws-term2-ports.zip](https://raw.githubusercontent.com/drganjoo/term2-setup/master/uws-term2-ports.zip) and copy the 'uws-term2' folder from the zip file to c:\vcpkg\ports
+Download [carnd-term2-libs-ports.zip](https://raw.githubusercontent.com/drganjoo/term2-setup/master/carnd-term2-libs-ports.zip) and copy the 'carnd-term2-libs' folder from the zip file to c:\vcpkg\ports
 
 ![copy_to_ports]
 
