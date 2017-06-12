@@ -198,3 +198,9 @@ You can put a breakpoint on line # 69 of main.cpp and re-run the program (F5) an
 The program should stop when it gets data from the simulator and you should be able to inspect values in the debugger local / auto window.
 
 ![debug]
+
+## Using eigen.natvis
+
+For easier debugging, download eigen.natvis and add that to the solution:
+
+https://bitbucket.org/eigen/eigen/raw/246af84e462db0dd95ca68f8b5cca6e496b71cf3/debug/msvc/eigen.natvis
