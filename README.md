@@ -54,7 +54,7 @@ Download [carnd-term2-libs-ports.zip](https://raw.githubusercontent.com/drganjoo
 Install uws-term2 using:
 
 ```
-C:\vcpkg> .\vcpkg install uws-term2
+C:\vcpkg> .\vcpkg install carnd-term2-libs
 ```
 
 Make sure you have a uWS folder in C:\vcpkg\installed\x86-windows\include:
