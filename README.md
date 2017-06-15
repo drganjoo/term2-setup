@@ -14,10 +14,11 @@
 [debug]: ./images/debug.png
 [properties]: ./images/properties.png
 [errors]: ./images/errors.png
-[matrix]: ./images/matirx.png
+[matrix]: ./images/matrix.png
 [matirx_with_natvis]: ./images/matirx_with_natvis.png
 [fixed_matirx]: ./images/fixed_matrix.png
 [eigen_natvis_added]: ./images/eigen_natvis_added.png
+
 ## Install cmake
 
 Download and install cmake:
