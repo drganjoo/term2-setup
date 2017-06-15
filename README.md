@@ -14,7 +14,10 @@
 [debug]: ./images/debug.png
 [properties]: ./images/properties.png
 [errors]: ./images/errors.png
-
+[matrix]: ./images/matirx.png
+[matirx_with_natvis]: ./images/matirx_with_natvis.png
+[fixed_matirx]: ./images/fixed_matrix.png
+[eigen_natvis_added]: ./images/eigen_natvis_added.png
 ## Install cmake
 
 Download and install cmake:
@@ -206,3 +209,17 @@ The program should stop when it gets data from the simulator and you should be a
 For easier debugging, download eigen.natvis and add that to the solution:
 
 https://bitbucket.org/eigen/eigen/raw/246af84e462db0dd95ca68f8b5cca6e496b71cf3/debug/msvc/eigen.natvis
+
+![eigen_natvis_added]
+
+**Without eigen.natvis**:
+
+![matrix]
+
+**With eigen.natvis** added to the solution, Dynamic Matrix
+
+![matirx_with_natvis]
+
+**With eigen.natvis** added to the solution, Fixed Matrix
+
+![fixed_matirx]
