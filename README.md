@@ -47,11 +47,13 @@ Install pre-requisites:
 C:\vcpkg> .\vcpkg install openssl zlib libuv
 ```
 
-Download [carnd-term2-libs-ports.zip](https://raw.githubusercontent.com/drganjoo/term2-setup/master/carnd-term2-libs-ports.zip) and copy the 'carnd-term2-libs' folder from the zip file to c:\vcpkg\ports
+## Install uWebSockets commit e94b6e1
+
+Since udacity's project are not using the latest master branch of uWebSockets, we need to install the same commit as is done for Ubuntu/Mac. I've already compiled the particular commit and have included the library/include files in [carnd-term2-libs-ports.zip](https://raw.githubusercontent.com/drganjoo/term2-setup/master/carnd-term2-libs-ports.zip). Just unzip and copy the 'carnd-term2-libs' folder from the zip file to c:\vcpkg\ports
 
 ![copy_to_ports]
 
-Install uws-term2 using:
+Install carnd-term2-libs using:
 
 ```
 C:\vcpkg> .\vcpkg install carnd-term2-libs
