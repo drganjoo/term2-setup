@@ -20,7 +20,6 @@ link_directories(/usr/local/Cellar/libuv/1.11.0/lib)
 
 endif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin") 
 
-
 if (WIN32)
     set(VCPKG_INSTALL ${_VCPKG_INSTALLED_DIR}/${VCPKG_TARGET_TRIPLET})
     message("Using vcpkg_install ${VCPKG_INSTALL}")
@@ -33,5 +32,7 @@ add_executable(ExtendedKF ${sources})
 if (NOT WIN32)
     target_link_libraries(ExtendedKF z ssl uv uWS)
 else()
-    target_link_libraries(ExtendedKF zlib ssleay32 libuv uWS ws2_32)
+    target_link_libraries(ExtendedKF ssleay32 libuv uWS ws2_32)
+    target_link_libraries(ExtendedKF optimized zlib )
+	target_link_libraries(ExtendedKF debug zlibd )
 endif()
