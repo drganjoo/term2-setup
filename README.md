@@ -95,10 +95,13 @@ endif()
 
 add_executable(ExtendedKF ${sources})
 
+
 if (NOT WIN32)
     target_link_libraries(ExtendedKF z ssl uv uWS)
 else()
-    target_link_libraries(ExtendedKF zlib ssleay32 libuv uWS ws2_32)
+    target_link_libraries(ExtendedKF ssleay32 libuv uWS ws2_32)
+    target_link_libraries(ExtendedKF optimized zlib )
+	target_link_libraries(ExtendedKF debug zlibd )
 endif()
 ```
 
