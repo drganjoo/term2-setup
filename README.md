@@ -154,7 +154,7 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
 	* Calculate a Jacobian here.
 	*/
 
-	MatrixXd temp(2,2);
+	MatrixXd temp(3,4);
 	return temp;
 }
 ```
