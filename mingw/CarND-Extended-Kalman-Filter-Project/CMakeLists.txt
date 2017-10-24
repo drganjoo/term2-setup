@@ -9,6 +9,7 @@ set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
 
 set(sources src/main.cpp src/tools.cpp src/FusionEKF.cpp src/kalman_filter.cpp src/tools.h src/FusionEKF.h src/kalman_filter.h)
 
+
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin") 
 
 include_directories(/usr/local/include)
@@ -23,6 +24,6 @@ add_executable(ExtendedKF ${sources})
 
 target_link_libraries(ExtendedKF z ssl uv uWS)
 
-if (WIN32)
+if (MINGW)
     target_link_libraries(ExtendedKF ws2_32)
 endif()
